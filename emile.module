@@ -1,1 +1,18 @@
 <?php
+/**
+ * @file
+ * A module providing complexity analysis for Drupal module code.
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ */
+function emile_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#emile":
+      return '<p>' . t("Provides complexity analysis for Drupal module code.") . '</p.>';
+      break;
+  }
+}
